@@ -1,0 +1,26 @@
+# Flutter generated files
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+# IDE and local files
+.idea/
+*.iml
+
+# Local Android configuration and build files
+android/local.properties
+android/.gradle/
+android/captures/
+
+# Never upload signing keys or secrets
+*.jks
+*.keystore
+key.properties
+.env
+.env.*
+!.env.example
+# Android local configuration and generated caches
+android/local.properties
+android/.gradle/

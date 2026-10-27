@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/" />
+
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta
+      name="description"
+      content="E-Announcement Hub Flutter Web App"
+    />
+
+    <meta name="google" content="notranslate" />
+    <meta name="theme-color" content="#000000" />
+
+    <title>E-Announcement Hub</title>
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Flutter Web Loader -->
+    <script src="flutter.js" defer></script>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyAI994v5-0XYtu249QuwOY6OeA9Lb-nA2Q",
+        authDomain: "eannouncementhub.firebaseapp.com",
+        projectId: "eannouncementhub",
+        storageBucket: "eannouncementhub.firebasestorage.app",
+        messagingSenderId: "608095749005",
+        appId: "1:608095749005:web:f8aa5723a666d42b0df3c4",
+        measurementId: "G-726EDJ6ESV"
+      };
+
+      const app = firebase.initializeApp(firebaseConfig);
+      const firestore = firebase.firestore();
+    </script>
+  </head>
+
+  <body>
+    <script>
+      window.addEventListener("load", function () {
+        _flutter.loader.loadEntrypoint({
+          entrypointUrl: "main.dart.js",
+          onEntrypointLoaded: function (engineInitializer) {
+            engineInitializer.initializeEngine().then(function (appRunner) {
+              appRunner.runApp();
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
